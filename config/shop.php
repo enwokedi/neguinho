@@ -6,7 +6,7 @@ return [
 	'apc_prefix' => 'laravel:', // prefix for caching config and translation in APCu
 	'num_formatter' => 'Locale', // locale based number formatter (alternative: "Standard")
 	'pcntl_max' => 4, // maximum number of parallel command line processes when starting jobs
-	'version' => env( 'APP_VERSION', 1 ), // shop CSS/JS file version
+	'version' => env('APP_VERSION', 1), // shop CSS/JS file version
 
 	'routes' => [
 		// Docs: https://aimeos.org/docs/latest/laravel/extend/#custom-routes
@@ -43,72 +43,72 @@ return [
 
 	'resource' => [
 		'db' => [
-			'adapter' => config( 'database.connections.' . config( 'database.default', 'mysql' ) . '.driver', 'mysql' ),
-			'host' => config( 'database.connections.' . config( 'database.default', 'mysql' ) . '.host', '127.0.0.1' ),
-			'port' => config( 'database.connections.' . config( 'database.default', 'mysql' ) . '.port', '3306' ),
-			'socket' => config( 'database.connections.' . config( 'database.default', 'mysql' ) . '.unix_socket', '' ),
-			'database' => config( 'database.connections.' . config( 'database.default', 'mysql' ) . '.database', 'forge' ),
-			'username' => config( 'database.connections.' . config( 'database.default', 'mysql' ) . '.username', 'forge' ),
-			'password' => config( 'database.connections.' . config( 'database.default', 'mysql' ) . '.password', '' ),
-			'stmt' => config( 'database.default', 'mysql' ) === 'mysql' ? ["SET SESSION sort_buffer_size=2097144; SET NAMES 'utf8mb4'; SET SESSION sql_mode='ANSI'"] : [],
+			'adapter' => config('database.connections.' . config('database.default', 'mysql') . '.driver', 'mysql'),
+			'host' => config('database.connections.' . config('database.default', 'mysql') . '.host', '127.0.0.1'),
+			'port' => config('database.connections.' . config('database.default', 'mysql') . '.port', '3306'),
+			'socket' => config('database.connections.' . config('database.default', 'mysql') . '.unix_socket', ''),
+			'database' => config('database.connections.' . config('database.default', 'mysql') . '.database', 'forge'),
+			'username' => config('database.connections.' . config('database.default', 'mysql') . '.username', 'forge'),
+			'password' => config('database.connections.' . config('database.default', 'mysql') . '.password', ''),
+			'stmt' => config('database.default', 'mysql') === 'mysql' ? ["SET SESSION sort_buffer_size=2097144; SET NAMES 'utf8mb4'; SET SESSION sql_mode='ANSI'"] : [],
 			'limit' => 3, // maximum number of concurrent database connections
 			'defaultTableOptions' => [
-				'charset' => config( 'database.connections.' . config( 'database.default', 'mysql' ) . '.charset' ),
-				'collate' => config( 'database.connections.' . config( 'database.default', 'mysql' ) . '.collation' ),
+				'charset' => config('database.connections.' . config('database.default', 'mysql') . '.charset'),
+				'collate' => config('database.connections.' . config('database.default', 'mysql') . '.collation'),
 			],
-			'driverOptions' => config( 'database.connections.' . config( 'database.default', 'mysql' ) . '.options' ),
+			'driverOptions' => config('database.connections.' . config('database.default', 'mysql') . '.options'),
 		],
 		'fs' => [
 			'adapter' => 'Standard',
-			'tempdir' => storage_path( 'tmp' ),
+			'tempdir' => storage_path('tmp'),
 			'basedir' => public_path(),
 			'baseurl' => rtrim(env('ASSET_URL', PHP_SAPI == 'cli' ? env('APP_URL') : ''), '/'),
 		],
 		'fs-media' => [
 			'adapter' => 'Standard',
-			'tempdir' => storage_path( 'tmp' ),
-			'basedir' => public_path( 'aimeos' ),
+			'tempdir' => storage_path('tmp'),
+			'basedir' => public_path('aimeos'),
 			'baseurl' => rtrim(env('ASSET_URL', PHP_SAPI == 'cli' ? env('APP_URL') : ''), '/') . '/aimeos',
 		],
 		'fs-mimeicon' => [
 			'adapter' => 'Standard',
-			'tempdir' => storage_path( 'tmp' ),
-			'basedir' => public_path( 'vendor/shop/mimeicons' ),
+			'tempdir' => storage_path('tmp'),
+			'basedir' => public_path('vendor/shop/mimeicons'),
 			'baseurl' => rtrim(env('ASSET_URL', PHP_SAPI == 'cli' ? env('APP_URL') : ''), '/') . '/vendor/shop/mimeicons',
 		],
 		'fs-theme' => [
 			'adapter' => 'Standard',
-			'tempdir' => storage_path( 'tmp' ),
-			'basedir' => public_path( 'vendor/shop/themes' ),
+			'tempdir' => storage_path('tmp'),
+			'basedir' => public_path('vendor/shop/themes'),
 			'baseurl' => rtrim(env('ASSET_URL', PHP_SAPI == 'cli' ? env('APP_URL') : ''), '/') . '/vendor/shop/themes',
 		],
 		'fs-admin' => [
 			'adapter' => 'Standard',
-			'tempdir' => storage_path( 'tmp' ),
-			'basedir' => storage_path( 'admin' ),
+			'tempdir' => storage_path('tmp'),
+			'basedir' => storage_path('admin'),
 		],
 		'fs-export' => [
 			'adapter' => 'Standard',
-			'tempdir' => storage_path( 'tmp' ),
-			'basedir' => storage_path( 'export' ),
+			'tempdir' => storage_path('tmp'),
+			'basedir' => storage_path('export'),
 		],
 		'fs-import' => [
 			'adapter' => 'Standard',
-			'tempdir' => storage_path( 'tmp' ),
-			'basedir' => storage_path( 'import' ),
+			'tempdir' => storage_path('tmp'),
+			'basedir' => storage_path('import'),
 		],
 		'fs-secure' => [
 			'adapter' => 'Standard',
-			'tempdir' => storage_path( 'tmp' ),
-			'basedir' => storage_path( 'secure' ),
+			'tempdir' => storage_path('tmp'),
+			'basedir' => storage_path('secure'),
 		],
 		'mq' => [
 			'adapter' => 'Standard',
 			'db' => 'db',
 		],
 		'email' => [
-			'from-email' => config( 'mail.from.address' ),
-			'from-name' => config( 'mail.from.name' ),
+			'from-email' => config('mail.from.address'),
+			'from-name' => config('mail.from.name'),
 		],
 	],
 
@@ -139,7 +139,7 @@ return [
 					// 'size' => 48, // number of products per page
 				],
 				'selection' => [
-					'type' => [// how variant attributes are displayed
+					'type' => [ // how variant attributes are displayed
 						'color' => 'radio',
 						'length' => 'radio',
 						'width' => 'radio',
@@ -153,12 +153,60 @@ return [
 		'frontend' => [
 			'catalog' => [
 				'levels-always' => 3 // number of category levels for mega menu
-			]
-		]
+			],
+			'jobs' => [
+				'product' => [
+					'import' => [
+						'csv' => [
+							'location' => 'tmp/products.csv',
+							'skip-lines' => 1,
+							'mapping' => [
+								'item' => [
+									0 => 'product.code', // e.g. unique EAN code
+									1 => 'product.label', // UTF-8 encoded text, also used as product name
+									2 => 'product.type', // type of the product, e.g. "default" or "selection"
+									3 => 'product.status', // enabled (1) or disabled (0)
+								],
+								'text' => [
+									4 => 'text.type', // e.g. "short" for short description
+									5 => 'text.content', // UTF-8 encoded text
+									6 => 'text.type', // e.g. "long" for long description
+									7 => 'text.content', // UTF-8 encoded text
+								],
+								'media' => [
+									8 => 'media.url', // relative URL of the product image on the server
+								],
+								'price' => [
+									9 => 'price.currencyid', // three letter ISO currency code
+									10 => 'price.quantity', // the quantity the price (for block pricing)
+									11 => 'price.value', // price with decimals separated by a dot
+									12 => 'price.taxrate', // tax rate with decimals separated by a dot
+								],
+								'attribute' => [
+									13 => 'attribute.code', // code of an attribute, will be created if not exists
+									14 => 'attribute.type', // e.g. "size", "length", "width", "color", etc.
+								],
+								'product' => [
+									15 => 'product.code', // e.g. EAN code of another product
+									16 => 'product.lists.type', // e.g. "suggestion" for suggested product
+								],
+								'property' => [
+									17 => 'product.property.value', // arbitrary value for the corresponding type
+									18 => 'product.property.type', // e.g. "package-weight"
+								],
+								'catalog' => [
+									19 => 'catalog.code', // e.g. Unique category code
+									20 => 'catalog.lists.type', // e.g. "promotion" for top seller products
+								],
+							],
+						],
+					],
+				],
+			],
+		],
 	],
 
-	'i18n' => [
-	],
+	'i18n' => [],
 
 	'madmin' => [
 		'cache' => [
@@ -180,13 +228,10 @@ return [
 	],
 
 
-	'command' => [
-	],
+	'command' => [],
 
-	'frontend' => [
-	],
+	'frontend' => [],
 
-	'backend' => [
-	],
+	'backend' => [],
 
 ];
