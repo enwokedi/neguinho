@@ -2,6 +2,8 @@ import './bootstrap';
 
 import './templatemo';
 
+import './custom'
+
 import '../css/app.css';
 
 import '../css/custom.css';
