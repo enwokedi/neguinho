@@ -162,38 +162,38 @@ return [
 							'skip-lines' => 1,
 							'mapping' => [
 								'item' => [
-									0 => 'product.code', // e.g. unique EAN code
-									1 => 'product.label', // UTF-8 encoded text, also used as product name
-									2 => 'product.type', // type of the product, e.g. "default" or "selection"
-									3 => 'product.status', // enabled (1) or disabled (0)
+									2 => 'product.code', // e.g. unique EAN code
+									16 => 'product.label', // UTF-8 encoded text, also used as product name
+									// 2 => 'product.type', // type of the product, e.g. "default" or "selection"
+									8 => 'product.status', // enabled (1) or disabled (0)
 								],
 								'text' => [
 									4 => 'text.type', // e.g. "short" for short description
-									5 => 'text.content', // UTF-8 encoded text
+									1 => 'text.content', // UTF-8 encoded text
 									6 => 'text.type', // e.g. "long" for long description
-									7 => 'text.content', // UTF-8 encoded text
+									12 => 'text.content', // UTF-8 encoded text
 								],
 								'media' => [
-									8 => 'media.url', // relative URL of the product image on the server
+									18 => 'media.url', // relative URL of the product image on the server
 								],
 								'price' => [
 									9 => 'price.currencyid', // three letter ISO currency code
 									10 => 'price.quantity', // the quantity the price (for block pricing)
 									11 => 'price.value', // price with decimals separated by a dot
-									12 => 'price.taxrate', // tax rate with decimals separated by a dot
+									// 12 => 'price.taxrate', // tax rate with decimals separated by a dot
 								],
 								'attribute' => [
 									13 => 'attribute.code', // code of an attribute, will be created if not exists
-									14 => 'attribute.type', // e.g. "size", "length", "width", "color", etc.
+									17 => 'attribute.type', // e.g. "size", "length", "width", "color", etc.
 								],
-								'product' => [
-									15 => 'product.code', // e.g. EAN code of another product
-									16 => 'product.lists.type', // e.g. "suggestion" for suggested product
-								],
-								'property' => [
-									17 => 'product.property.value', // arbitrary value for the corresponding type
-									18 => 'product.property.type', // e.g. "package-weight"
-								],
+								// 'product' => [
+								// 	15 => 'product.code', // e.g. EAN code of another product
+								// 	16 => 'product.lists.type', // e.g. "suggestion" for suggested product
+								// ],
+								// 'property' => [
+								// 	17 => 'product.property.value', // arbitrary value for the corresponding type
+								// 	18 => 'product.property.type', // e.g. "package-weight"
+								// ],
 								'catalog' => [
 									19 => 'catalog.code', // e.g. Unique category code
 									20 => 'catalog.lists.type', // e.g. "promotion" for top seller products
