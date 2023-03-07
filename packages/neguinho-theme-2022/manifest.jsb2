@@ -1,0 +1,22 @@
+{
+	"projectName": "neguinho-theme-2022",
+	"licenseText": "proprietary",
+	"pkgs": [{
+		"name": "neguinho-theme-2022 CSS",
+		"file": "neguinho-theme-2022.css",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.css",
+			"path": "themes/admin/jqadm/"
+		}]
+	}, {
+		"name": "neguinho-theme-2022 JS",
+		"file": "neguinho-theme-2022.js",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.js",
+			"path": "themes/admin/jqadm/"
+		}]
+	}],
+	"resources" : []
+}

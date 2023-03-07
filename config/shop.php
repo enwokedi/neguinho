@@ -39,6 +39,7 @@ return [
 		'checkout-update' => ['checkout/update'],
 		'supplier-detail' => ['locale/select', 'basket/mini', 'catalog/tree', 'catalog/search', 'supplier/detail', 'catalog/lists'],
 		'cms' => ['cms/page', 'catalog/tree', 'basket/mini'],
+		'nshop' => ['basket/mini', 'catalog/session'],
 	],
 
 	'resource' => [

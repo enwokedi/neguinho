@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-});
+Route::get('/', [PageController::class, 'homeAction'])->name('page.home');
+Route::get('/nshop', [PageController::class, 'shopAction'])->name('page.home');
+
+// Route::get('/', function () {
+//     return view('home');
+// });
 
 // Route::group(['middleware' => ['web']], function () {
 //     Route::get('/', '\Aimeos\Shop\Controller\CatalogController@homeAction')->name('aimeos_home');
