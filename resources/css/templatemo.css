@@ -61,7 +61,7 @@ div {
 
 /* General */
 .logo {
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 
 .text-warning {
@@ -93,7 +93,7 @@ div {
 }
 
 .bg-success {
-  background-color: #59ab6e !important;
+  background-color: #d72636 !important;
 }
 
 .btn-success {
@@ -242,7 +242,7 @@ div {
 }
 
 .services-icon-wap:hover {
-  background: #69bb7e;
+  background: #d72636;
 }
 
 /* Contact map */
@@ -261,7 +261,7 @@ div {
 }
 
 #tempaltemo_footer a:hover {
-  color: #68bb7d;
+  color: #d72636;
 }
 
 #tempaltemo_footer ul.footer-link-list li {

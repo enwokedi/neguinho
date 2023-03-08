@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="bg-success py-5">
+<!--section class="bg-success py-5">
     <div class="container">
         <div class="row text-center pt-5 pb-3">
             <div class="col-lg-6 m-auto text-white">
@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-</section>
+</section-->
 <!-- Close Banner -->
 
 <!-- Start Section -->
@@ -40,7 +40,7 @@
         <div class="col-md-6 col-lg-3 pb-5">
             <div class="h-100 py-5 services-icon-wap shadow">
                 <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
-                <h2 class="h5 mt-4 text-center">Shop</h2>
+                <h2 class="h5 mt-4 text-center">Products</h2>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@
         <div class="col-md-6 col-lg-3 pb-5">
             <div class="h-100 py-5 services-icon-wap shadow">
                 <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
-                <h2 class="h5 mt-4 text-center"></h2>
+                <h2 class="h5 mt-4 text-center">GPS Tracker</h2>
             </div>
         </div>
 
@@ -62,7 +62,7 @@
         <div class="col-md-6 col-lg-3 pb-5">
             <div class="h-100 py-5 services-icon-wap shadow">
                 <div class="h1 text-success text-center"><i class="fa fa-percent"></i></div>
-                <h2 class="h5 mt-4 text-center">Spare Parts - Coming Soon</h2>
+                <h2 class="h5 mt-4 text-center">Spare Parts</h2>
             </div>
         </div>
 

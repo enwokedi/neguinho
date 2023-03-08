@@ -2,7 +2,10 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.1",
@@ -66,6 +69,16 @@
             "php-http/discovery": true
         }
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.aimeos.org/aimeoscom"
+        },
+        {
+            "type": "path",
+            "url": "packages/*"
+        }
+    ],
     "minimum-stability": "stable",
     "prefer-stable": true
 }
