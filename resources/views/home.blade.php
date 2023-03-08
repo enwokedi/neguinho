@@ -6,10 +6,7 @@
     <div class="container">
         <div class="row text-center pt-5 pb-3">
             <div class="col-lg-6 m-auto text-white">
-                <h1 class="h1">Select Services</h1>
-                <p>
 
-                </p>
             </div>
         </div>
     </div>

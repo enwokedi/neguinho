@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/fontawesome.min.css')}}">
     <!-- link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" -->
 
-    @vite(['resources/css/app.css'])
+    @vite(['resources/css/app.js'])
 </head>
 
 <body>
@@ -62,16 +62,16 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="/about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
+                            <a class="nav-link" href="/shop">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="/contact">Contact</a>
                         </li>
                     </ul>
                 </div>
