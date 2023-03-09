@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>Home</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="apple-touch-icon" href="{{asset('assets/img/apple-icon.png')}}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/img/favicon.ico')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/img/icon.png')}}">
 
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/templatemo.css')}}">
@@ -30,9 +31,11 @@
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@neguinhomotors.co.uk</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@neguinhomotors.co.uk">info@neguinhomotors.co.uk</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:02083141498">Catford: 0208 314 1498</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:02034095478">Streatham: 0203 409 5478</a>
                 </div>
                 <div>
                     <a class="text-light" href="https://fb.com/templatem" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
@@ -51,7 +54,7 @@
         <div class="container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
-                NM
+                <a href="/"><img class="navbar-brand logo" src="assets/img/icon.png" alt="Neguinho Motors Logo" style="width: 90px; height: 47px;"></a>
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +64,7 @@
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
+                        <!-- li class="nav-item">
                             <input type="search" class="nav-link" placeholder="Search">
                         </li>
                         <li class="nav-item">
@@ -69,7 +72,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact">Contact</a>
-                        </li>
+                        </li -->
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
@@ -85,12 +88,27 @@
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a-->
                     <a class="nav-icon position-relative text-decoration-none" href="#">
-                        <!--i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i-->
+                        <!--i class="fa fa-fw fa-user text-dark mr-3"></i-->
+                        <a class="nav-link" href="/about">About</a>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <!--i class="fa fa-fw fa-user text-dark mr-3"></i-->
-                        <a class="nav-link" href="#">Login / Register</a>
+                        <a class="nav-link" href="/contact">Contact</a>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <!--i class="fa fa-fw fa-user text-dark mr-3"></i-->
+                        <a class="nav-link" href="/login">Login</a>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <!--i class="fa fa-fw fa-user text-dark mr-3"></i-->
+                        <a class="nav-link" href="/register">Register</a>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                     </a>
                 </div>
@@ -170,11 +188,11 @@
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            Arch 1179, Catford Hill, London SE6 4NU
+                            Unit 1179, 9 Catford Hill, London SE6 4NU
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">07475 527 262</a>
+                            <a class="text-decoration-none" href="tel:02083141498">0208 314 1498</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
@@ -188,11 +206,11 @@
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            Arch 1179, Catford Hill, London SE6 4NU
+                            4A Penwortham Road, London SW16 6RE
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">07475 527 262</a>
+                            <a class="text-decoration-none" href="tel:02034095478">0203 409 5478</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>

@@ -2,65 +2,82 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
-use Darryldecode\Cart\Cart;
 
 class CartController extends Controller
 {
-    public function cartList()
+    /**
+     * Add to cart
+     *
+     * @return json
+     */
+    public function addToCart()
     {
-        $cartItems = \Cart::getContent();
-        // dd($cartItems);
-        return view('cart', compact('cartItems'));
+        return Product::addToCart(request('productId'));
     }
 
-    public function addToCart(Request $request)
+    /**
+     * Remove from cart.
+     *
+     * @return Illuminate\Http\JsonResponse
+     */
+    public function removeFromCart()
     {
-        \Cart::add([
-            'id' => $request->id,
-            'name' => $request->name,
-            'price' => $request->price,
-            'quantity' => $request->quantity,
-            'attributes' => array(
-                'image' => $request->image,
-            )
-        ]);
-        session()->flash('success', 'Product Added to Cart Successfully !');
+        $cart = cart()->removeAt('cartItemIndex');
 
-        return redirect()->route('cart.list');
+        return $this->getCartDetails();
     }
 
-    public function updateCart(Request $request)
+    /**
+     * Increment cart item quantity.
+     *
+     * @return Illuminate\Http\JsonResponse
+     */
+    public function cartItemQuantitySet()
     {
-        \Cart::update(
-            $request->id,
-            [
-                'quantity' => [
-                    'relative' => false,
-                    'value' => $request->quantity
-                ],
-            ]
-        );
+        cart()->setQuantityAt(request('cartItemIndex'), request('cartQuantity'));
 
-        session()->flash('success', 'Item Cart is Updated Successfully !');
-
-        return redirect()->route('cart.list');
+        return $this->getCartDetails();
     }
 
-    public function removeCart(Request $request)
+    /**
+     * Increment cart item quantity.
+     *
+     * @return Illuminate\Http\JsonResponse
+     */
+    public function incrementCartItem()
     {
-        \Cart::remove($request->id);
-        session()->flash('success', 'Item Cart Remove Successfully !');
+        cart()->incrementQuantityAt(request('cartItemIndex'));
 
-        return redirect()->route('cart.list');
+        return $this->getCartDetails();
     }
 
-    public function clearAllCart()
+    /**
+     * Decrement cart item quantity.
+     *
+     * @return Illuminate\Http\JsonResponse
+     */
+    public function decrementCartItem()
     {
-        \Cart::clear();
+        cart()->decrementQuantityAt(request('cartItemIndex'));
 
-        session()->flash('success', 'All Item Cart Clear Successfully !');
+        return $this->getCartDetails();
+    }
 
-        return redirect()->route('cart.list');
+    /**
+     * Applies the discount to the cart.
+     *
+     * @return Illuminate\Http\JsonResponse
+     */
+    public function applyDiscount()
+    {
+        if (request('discountType') == 1) {
+            cart()->applyDiscount($percentage = request('discountInput'));
+            return $this->getCartDetails();
+        }
+        cart()->applyFlatDiscount($amount = request('discountInput'));
+
+        return $this->getCartDetails();
     }
 }

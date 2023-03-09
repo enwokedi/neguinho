@@ -3,7 +3,7 @@
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\CartController;
 
 /*
@@ -23,6 +23,16 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
      * Home Routes
      */
     Route::get('/', 'HomeController@index')->name('home.index');
+    Route::get('/about', 'HomeController@about')->name('home.about');
+    Route::get('/contact', 'HomeController@contact')->name('home.contact');
+    Route::get('/new-motorcycles', 'HomeController@newMotorcycles')->name('home.new-motorcycles');
+    Route::get('/used-motorcycles', 'HomeController@usedMotorcycles')->name('home.used-motorcycles');
+    Route::get('/rentals', 'HomeController@rentals')->name('home.rentals');
+    Route::get('/products', 'HomeController@products')->name('home.products');
+    Route::get('/gps-tracker', 'HomeController@gpsTracker')->name('home.gps-tracker');
+    Route::get('/repairs-maintenance', 'HomeController@repairsMaintenance')->name('home.repairs-and-maintenance');
+    Route::get('/spare-parts', 'HomeController@spareParts')->name('home.spare-parts');
+    Route::get('/road-traffic-accidents', 'HomeController@roadTrafficAccidents')->name('home.road=traffic-accidents');
 
     Route::group(['middleware' => ['guest']], function () {
         /**
