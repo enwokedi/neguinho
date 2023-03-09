@@ -35,7 +35,7 @@
                     <i class="fa fa-phone mx-2"></i>
                     <a class="navbar-sm-brand text-light text-decoration-none" href="tel:02083141498">Catford: 0208 314 1498</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:02034095478">Streatham: 0203 409 5478</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:02034095478">Tooting: 0203 409 5478</a>
                 </div>
                 <div>
                     <a class="text-light" href="https://fb.com/templatem" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>

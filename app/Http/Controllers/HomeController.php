@@ -35,11 +35,6 @@ class HomeController extends Controller
         return view('home.rentals');
     }
 
-    public function products()
-    {
-        return view('home.products');
-    }
-
     public function gpsTracker()
     {
         return view('home.gps-tracker');
