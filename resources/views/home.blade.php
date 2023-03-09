@@ -69,7 +69,7 @@
         <div class="col-md-6 col-lg-3 pb-5">
             <div class="h-100 py-5 services-icon-wap shadow">
                 <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
-                <h2 class="h5 mt-4 text-center">Road Side Assistance</h2>
+                <h2 class="h5 mt-4 text-center">Road Traffic Accidents</h2>
             </div>
         </div>
     </div>
