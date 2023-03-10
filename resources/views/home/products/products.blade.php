@@ -5,95 +5,7 @@
 <div class="container py-5">
     <div class="row">
 
-        <div class="col-lg-3">
-            <h1 class="h2 pb-4">Products</h1>
-            <ul class="list-unstyled templatemo-accordion">
-                <li class="pb-3">
-                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                        Accessories
-                        <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
-                    </a>
-                    <ul class="collapse show list-unstyled pl-3">
-                        <li><a class="text-decoration-none" href="#">Phone & Device Mounts</a></li>
-                        <li><a class="text-decoration-none" href="#">Covers</a></li>
-                        <li><a class="text-decoration-none" href="#">Handlebar Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Battery Care & Power Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Scoot Stuff</a></li>
-                        <li><a class="text-decoration-none" href="#">Workshop</a></li>
-                        <li><a class="text-decoration-none" href="#">Helmet Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Lighting</a></li>
-                        <li><a class="text-decoration-none" href="#">Paint Protection</a></li>
-                        <li><a class="text-decoration-none" href="#">Travel & Transportation</a></li>
-                        <li><a class="text-decoration-none" href="#">Tyre & Wheel Care</a></li>
-                        <li><a class="text-decoration-none" href="#">Eye Wear</a></li>
-                    </ul>
-                </li>
-                <li class="pb-3">
-                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                        Helmets
-                        <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                    </a>
-                    <ul id="collapseTwo" class="collapse list-unstyled pl-3">
-                        <li><a class="text-decoration-none" href="#">MT Helmets</a></li>
-                        <li><a class="text-decoration-none" href="#">Simpson</a></li>
-                        <li><a class="text-decoration-none" href="#">Alpinestars</a></li>
-                        <li><a class="text-decoration-none" href="#">Box</a></li>
-                        <li><a class="text-decoration-none" href="#">HJC</a></li>
-                    </ul>
-                </li>
-                <li class="pb-3">
-                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                        Security
-                        <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                    </a>
-                    <ul id="collapseThree" class="collapse list-unstyled pl-3">
-                        <li><a class="text-decoration-none" href="#">Lever Locks</a></li>
-                        <li><a class="text-decoration-none" href="#">Chain Locks & Chains</a></li>
-                        <li><a class="text-decoration-none" href="#">Anchors</a></li>
-                        <li><a class="text-decoration-none" href="#">Cable Locks</a></li>
-                        <li><a class="text-decoration-none" href="#">Disc Locks & Padlocks</a></li>
-                        <li><a class="text-decoration-none" href="#">U Locks</a></li>
-                    </ul>
-                </li>
-                <li class="pb-3">
-                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                        Lugage
-                        <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                    </a>
-                    <ul id="collapseThree" class="collapse list-unstyled pl-3">
-                        <li><a class="text-decoration-none" href="#">Helmet & Boot Carriers</a></li>
-                        <li><a class="text-decoration-none" href="#">Panniers</a></li>
-                        <li><a class="text-decoration-none" href="#">Luggage Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Backpacks</a></li>
-                        <li><a class="text-decoration-none" href="#">Tail Packs</a></li>
-                        <li><a class="text-decoration-none" href="#">Tank Bags</a></li>
-                        <li><a class="text-decoration-none" href="#">Waist & Leg Bags</a></li>
-                        <li><a class="text-decoration-none" href="#">Top Boxes</a></li>
-                        <li><a class="text-decoration-none" href="#">Sat Nav Holder</a></li>
-                    </ul>
-                </li>
-                <li class="pb-3">
-                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                        Rider Wear
-                        <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                    </a>
-                    <ul id="collapseThree" class="collapse list-unstyled pl-3">
-                        <li><a class="text-decoration-none" href="#">ARMR</a></li>
-                        <li><a class="text-decoration-none" href="#">Dojo</a></li>
-                        <li><a class="text-decoration-none" href="#">Alpinestars</a></li>
-                        <li><a class="text-decoration-none" href="#">Oxford</a></li>
-                        <li><a class="text-decoration-none" href="#">Spartan</a></li>
-                        <li><a class="text-decoration-none" href="#">Bull-it</a></li>
-                    </ul>
-                </li>
-                <li class="pb-3">
-                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                        Tracker
-                        <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        @include('frontend.prod-menu')
 
         <div class="col-lg-9">
             <!-- div class="row">
@@ -505,16 +417,16 @@
                                 <div class="carousel-item active">
                                     <div class="row">
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/alpinestars.jpg" alt="Alpinestars Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/arm.jpg" alt="ARM Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/box.jpg" alt="Box Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/bullit.jpg" alt="Bull-it Logo"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -524,16 +436,16 @@
                                 <div class="carousel-item">
                                     <div class="row">
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/dojo.jpg" alt="Dojo Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/hjc.jpg" alt="HJC Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/mt_helmets.jpg" alt="MT Helmets Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/oxford.jpg" alt="Oxford Logo"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -543,16 +455,16 @@
                                 <div class="carousel-item">
                                     <div class="row">
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/simpson.jpg" alt="Simpson Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/spartan.jpg" alt="Spartan Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/mt_helmets.jpg" alt="MT Helmets Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
-                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            <a href="#"><img class="img-fluid brand-img" src="assets/img/brands/oxford.jpg" alt="Oxford Logo"></a>
                                         </div>
                                     </div>
                                 </div>

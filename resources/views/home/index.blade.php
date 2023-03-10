@@ -44,7 +44,7 @@
         </div>
 
         <div class="col-md-6 col-lg-3 pb-5">
-            <a href="/shop">
+            <a href="/product-type">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
                     <h2 class="h5 mt-4 text-center">Products</h2>
