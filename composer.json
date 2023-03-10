@@ -9,7 +9,6 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "barryvdh/laravel-ide-helper": "*",
         "freshbitsweb/laravel-cart-manager": "^1.6",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/breeze": "^1.19",
@@ -19,6 +18,7 @@
         "spatie/laravel-permission": "^5.9"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.13",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
