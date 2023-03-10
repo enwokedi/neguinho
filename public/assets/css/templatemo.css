@@ -1,8 +1,8 @@
 /*
 
-Neguinho Motors Limited
+TemplateMo 559 Zay Shop
 
-https://neguinhomotors.co.uk
+https://templatemo.com/tm-559-zay-shop
 
 ---------------------------------------------
 Table of contents
@@ -61,7 +61,7 @@ div {
 
 /* General */
 .logo {
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 
 .text-warning {
@@ -107,7 +107,7 @@ div {
 
 .pagination .page-link:hover,
 .pagination .page-link.active {
-  background-color: #d72636;
+  background-color: #69bb7e;
   color: #fff;
 }
 
