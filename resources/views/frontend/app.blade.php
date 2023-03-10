@@ -13,11 +13,73 @@
 
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/templatemo.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
+    <!-- <link rel="stylesheet" href="{{asset('assets/css/custom.css')}}"> -->
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <style>
+        /* General */
+        .text-success {
+            color: #d72636 !important;
+        }
+
+        .bg-success {
+            background-color: #d72636 !important;
+        }
+
+        .btn-success {
+            background-color: #d72636 !important;
+            border-color: #d72636 !important;
+        }
+
+        .pagination .page-link:hover {
+            color: #000;
+        }
+
+        .pagination .page-link:hover,
+        .pagination .page-link.active {
+            background-color: #d72636;
+            color: #fff;
+        }
+
+        /* Nav */
+        #templatemo_main_nav a:hover {
+            color: #d72636;
+        }
+
+        /* Shop */
+        .shop-top-menu a:hover {
+            color: #d72636 !important;
+        }
+
+        /* Product */
+        .product-wap .product-color-dot.color-dot-green {
+            background: #d72636;
+        }
+
+        /* Carousel Hero */
+        #template-mo-zay-hero-carousel .carousel-indicators li {
+            margin-top: -50px;
+            background-color: #d72636;
+        }
+
+        #template-mo-zay-hero-carousel .carousel-control-next i,
+        #template-mo-zay-hero-carousel .carousel-control-prev i {
+            color: #d72636 !important;
+            font-size: 2.8em !important;
+        }
+
+        /* Carousel Brand */
+        .services-icon-wap:hover {
+            background: #d72636;
+        }
+
+        /* Contact map */
+        #tempaltemo_footer a:hover {
+            color: #d72636;
+        }
+    </style>
 
 </head>
 
@@ -50,9 +112,9 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
-                <a href="/"><img class="navbar-brand logo" src="assets/img/icon.png" alt="Neguinho Motors Logo" style="width: 90px; height: 47px;"></a>
-            </a>
+            <!-- a class="navbar-brand text-success logo h1 align-self-center" href="" -->
+            <a href="/"><img class="navbar-brand logo" src="assets/img/icon.png" alt="Neguinho Motors Logo" style="width: 90px; height: 47px;"></a>
+            <!--/a -->
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

@@ -96,17 +96,17 @@
         </div>
 
         <div class="col-lg-9">
-            <div class="row">
+            <!-- div class="row">
                 <div class="col-md-6">
                     <ul class="list-inline shop-top-menu pb-3 pt-1">
                         <li class="list-inline-item">
                             <a class="h3 text-dark text-decoration-none mr-3" href="#">All</a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="h3 text-dark text-decoration-none mr-3" href="#">Men's</a>
+                            <a class="h3 text-dark text-decoration-none mr-3" href="#">Brand 1</a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="h3 text-dark text-decoration-none" href="#">Women's</a>
+                            <a class="h3 text-dark text-decoration-none mr-3" href="#">Brand 2</a>
                         </li>
                     </ul>
                 </div>
@@ -119,7 +119,7 @@
                         </select>
                     </div>
                 </div>
-            </div>
+            </div -->
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4 product-wap rounded-0">
