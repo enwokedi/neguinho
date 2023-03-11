@@ -31,7 +31,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/rentals', 'HomeController@rentals')->name('home.rentals');
     // Products Start
     Route::get('/product-type', 'HomeController@productType')->name('products.product-type');
-    Route::get('/accessories', [HomeController::class, 'accessories'])->name('products.accessories');
+    Route::get('/accessories', 'HomeController@accessories')->name('products.accessories');
     // Products End
     Route::get('/gps-tracker', 'HomeController@gpsTracker')->name('home.gps-tracker');
     Route::get('/repairs-maintenance', 'HomeController@repairsMaintenance')->name('home.repairs-and-maintenance');
