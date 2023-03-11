@@ -35,10 +35,17 @@ class HomeController extends Controller
         return view('home.rentals');
     }
 
+    // Products Start
     public function productType()
     {
-        return view('home.product-type');
+        return view('products.product-type');
     }
+
+    public function accessories()
+    {
+        return view('products.accessories');
+    }
+    // Products End
 
     public function gpsTracker()
     {

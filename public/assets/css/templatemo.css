@@ -132,6 +132,30 @@ div {
   margin-right: 20px;
 }
 
+/* Breadcrumb */
+.breadcrumb {
+  margin: 19px 0px 0 0;
+  padding: 8px 2px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.breadcrumb a {
+  color: #b6b5b6;
+}
+
+.breadcrumb a:active,
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+  text-decoration: none;
+  color: #d72636;
+}
+
+.breadcrumb>li+li::before {
+  content: ">";
+  color: #b6b5b6;
+}
+
 /* Hero Carousel */
 #template-mo-zay-hero-carousel {
   background: #efefef !important;
@@ -143,7 +167,7 @@ div {
 }
 
 .templatemo-accordion a:hover {
-  color: #333d4a;
+  color: #d72636;
 }
 
 /* Shop */

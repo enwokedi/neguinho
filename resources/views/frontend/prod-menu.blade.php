@@ -2,7 +2,7 @@
     <h1 class="h2 pb-4">@yield('title')</h1>
     <ul class="list-unstyled templatemo-accordion">
         <li class="pb-3">
-            <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+            <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="/accessories">
                 Accessories
                 <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
             </a>
@@ -53,7 +53,7 @@
                 Lugage
                 <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
             </a>
-            <ul id="collapseThree" class="collapse list-unstyled pl-3">
+            <ul id="collapseFour" class="collapse list-unstyled pl-3">
                 <li><a class="text-decoration-none" href="#">Helmet & Boot Carriers</a></li>
                 <li><a class="text-decoration-none" href="#">Panniers</a></li>
                 <li><a class="text-decoration-none" href="#">Luggage Accessories</a></li>
@@ -70,7 +70,7 @@
                 Rider Wear
                 <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
             </a>
-            <ul id="collapseThree" class="collapse list-unstyled pl-3">
+            <ul id="collapseFive" class="collapse list-unstyled pl-3">
                 <li><a class="text-decoration-none" href="#">ARMR</a></li>
                 <li><a class="text-decoration-none" href="#">Dojo</a></li>
                 <li><a class="text-decoration-none" href="#">Alpinestars</a></li>

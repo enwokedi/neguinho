@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +29,10 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/new-motorcycles', 'HomeController@newMotorcycles')->name('home.new-motorcycles');
     Route::get('/used-motorcycles', 'HomeController@usedMotorcycles')->name('home.used-motorcycles');
     Route::get('/rentals', 'HomeController@rentals')->name('home.rentals');
-    Route::get('/product-type', 'HomeController@productType')->name('home.shop');
+    // Products Start
+    Route::get('/product-type', 'HomeController@productType')->name('products.product-type');
+    Route::get('/accessories', [HomeController::class, 'accessories'])->name('products.accessories');
+    // Products End
     Route::get('/gps-tracker', 'HomeController@gpsTracker')->name('home.gps-tracker');
     Route::get('/repairs-maintenance', 'HomeController@repairsMaintenance')->name('home.repairs-and-maintenance');
     Route::get('/spare-parts', 'HomeController@spareParts')->name('home.spare-parts');
@@ -86,7 +90,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 });
 
 // Product routes...
-Route::get('products', [ProductsController::class, 'productList'])->name('products.list');
+Route::get('product', [ProductsController::class, 'accessories'])->name('products.accessories');
 Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');
 Route::post('cart', [CartController::class, 'addToCart'])->name('cart.store');
 Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.update');
