@@ -1,12 +1,12 @@
 <div class="col-lg-3">
-    <h1 class="h2 pb-4">@yield('title')</h1>
+    <h1 class="h2 pb-4"></h1>
     <ul class="list-unstyled templatemo-accordion">
         <li class="pb-3">
-            <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="/accessories">
+            <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="">
                 Accessories
                 <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
             </a>
-            <ul class="collapse show list-unstyled pl-3">
+            <ul class="collapseOne show list-unstyled pl-3">
                 <li><a class="text-decoration-none" href="#">Phone & Device Mounts</a></li>
                 <li><a class="text-decoration-none" href="#">Covers</a></li>
                 <li><a class="text-decoration-none" href="#">Handlebar Accessories</a></li>
@@ -86,4 +86,5 @@
             </a>
         </li>
     </ul>
+
 </div>

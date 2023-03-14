@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "diglactic/laravel-breadcrumbs": "^8.1",
         "freshbitsweb/laravel-cart-manager": "^1.6",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/breeze": "^1.19",
@@ -70,16 +71,6 @@
             "php-http/discovery": true
         }
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.aimeos.org/aimeoscom"
-        },
-        {
-            "type": "path",
-            "url": "packages/*"
-        }
-    ],
     "minimum-stability": "stable",
     "prefer-stable": true
 }

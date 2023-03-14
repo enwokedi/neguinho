@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ use App\Http\Controllers\HomeController;
 // Roles and permissions routing
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
     /**
-     * Home Routes
+     * Frontend Routes
      */
     Route::get('/', 'HomeController@index')->name('home.index');
     Route::get('/about', 'HomeController@about')->name('home.about');
@@ -30,8 +31,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/used-motorcycles', 'HomeController@usedMotorcycles')->name('home.used-motorcycles');
     Route::get('/rentals', 'HomeController@rentals')->name('home.rentals');
     // Products Start
-    Route::get('/product-type', 'HomeController@productType')->name('products.product-type');
-    Route::get('/accessories', 'HomeController@accessories')->name('products.accessories');
+    Route::get('/product-types', 'HomeController@productType')->name('home.product-types');
+    Route::get('/accessories', 'HomeController@accessories')->name('home.accessories');
     // Products End
     Route::get('/gps-tracker', 'HomeController@gpsTracker')->name('home.gps-tracker');
     Route::get('/repairs-maintenance', 'HomeController@repairsMaintenance')->name('home.repairs-and-maintenance');
@@ -90,6 +91,12 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 });
 
 // Product routes...
+// Route::resource(
+//     'products',
+//     'ProductController',
+//     array('only' => 'index', 'show', 'category')
+// );
+Route::get('/category/{id}', [ProductController::class, 'category'])->name('products.category');
 Route::get('product', [ProductsController::class, 'accessories'])->name('products.accessories');
 Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');
 Route::post('cart', [CartController::class, 'addToCart'])->name('cart.store');

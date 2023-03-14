@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -35,17 +36,19 @@ class HomeController extends Controller
         return view('home.rentals');
     }
 
-    // Products Start
+    // Products Start **************************************************
+
     public function productType()
     {
-        return view('products.product-type');
+        return view('home.product-types');
     }
 
     public function accessories()
     {
-        return view('products.accessories');
+        return view('home.accessories');
     }
-    // Products End
+
+    // Products End ****************************************************
 
     public function gpsTracker()
     {

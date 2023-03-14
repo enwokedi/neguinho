@@ -12,7 +12,11 @@
     </div>
 </section-->
 <!-- Close Banner -->
-
+<div class="row">
+    <div class="d-flex">
+        <!-- Breadcrumb goes here !!! -->
+    </div>
+</div>
 <!-- Start Section -->
 <section class="container py-5">
     <div class="row">
@@ -44,7 +48,7 @@
         </div>
 
         <div class="col-md-6 col-lg-3 pb-5">
-            <a href="/product-type">
+            <a href="/product-types">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
                     <h2 class="h5 mt-4 text-center">Products</h2>
